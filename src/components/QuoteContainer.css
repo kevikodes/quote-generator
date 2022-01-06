@@ -1,0 +1,45 @@
+.quoteContainer {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  color: white;
+  width: 50%;
+  padding: 30px;
+  -webkit-box-shadow: 5px 5px 15px 5px #fff;
+  box-shadow: 5px 5px 15px 5px #fff;
+  margin: 30px auto;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.quoteHeader {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.quoteContent {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.quoteAuthor {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.genBtn {
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}

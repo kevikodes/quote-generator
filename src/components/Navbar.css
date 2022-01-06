@@ -7,6 +7,12 @@
   align-items: center;
   justify-content: center;
   padding: 10px 50px;
+  -webkit-box-shadow: 1px 14px 15px -5px #fff;
+  box-shadow: 1px 14px 15px -5px #fff;
+  border-bottom: 1px solid black;
+  margin-bottom: 100px;
+  display: sticky;
+  top: 0;
 }
 
 .navbarHeader {
