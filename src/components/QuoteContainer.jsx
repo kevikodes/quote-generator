@@ -1,16 +1,21 @@
 import React from "react";
 import "./QuoteContainer.css";
 
-const QuoteContainer = () => {
+const QuoteContainer = ({ quoteData, fetchQuote }) => {
   return (
     <div className="quoteContainer">
-      <div className="quoteHeader">Generate a new random quote!</div>
-      <div className="quoteContent">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum culpa
-        dolorum dignissimos, a explicabo veritatis!
+      <div className="quoteHeader">Generate a random quote!</div>
+      {quoteData ? (
+        <>
+          <div className="quoteContent">{quoteData?.content}</div>
+          <div className="quoteAuthor">- {quoteData?.originator.name} </div>
+        </>
+      ) : (
+        <h1>Loading...</h1>
+      )}
+      <div className="genBtn" onClick={fetchQuote}>
+        Generate Quote
       </div>
-      <div className="quoteAuthor">- Kevin R Owens III</div>
-      <div className="genBtn">Generate Quote</div>
     </div>
   );
 };
